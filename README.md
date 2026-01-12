@@ -41,7 +41,7 @@ Tennies_prediction/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Siba4442/Tennis-Match-Outcome-Prediction-
 cd Tennies_prediction
 ```
 
@@ -186,43 +186,12 @@ class SplitConfig:
     SPLIT_DATE: int = 20221231  # Change this for different splits
 ```
 
-## 📝 Development
 
-### Project Structure Philosophy
-
-- **Notebook:** Heavy data processing, exploration, visualization
-- **Python Modules:** Training, evaluation, comparison
-- **Single Source of Truth:** `final_features.parquet` is consumed by all training scripts
-
-### Adding New Features
-
-1. Modify the feature engineering loop in the notebook
-2. Ensure features use only past information
-3. Re-run notebook to regenerate `final_features.parquet`
-4. Training scripts automatically pick up new features
-
-## 🤝 Contributing
-
-Contributions welcome! Areas for improvement:
-
-- Additional feature engineering (momentum, fatigue, tournament importance)
-- Hyperparameter tuning
-- Ensemble methods
-- Deep learning models
-- Betting strategy backtesting
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgments
 
 - **Data Source:** [Jeff Sackmann's tennis_atp repository](https://github.com/JeffSackmann/tennis_atp)
 - **Inspiration:** FiveThirtyEight's Elo rating system for sports
-
-## 📧 Contact
-
-For questions or suggestions, please open an issue or contact the maintainer.
 
 ---
 
